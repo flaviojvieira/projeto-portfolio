@@ -130,6 +130,11 @@ section#detalhes {
   grid-column: 2;
 }
 
+h2#apresentacao {
+  text-align: center;
+  font-size: 1.7em;
+}
+
 article {
   background-color: var(--fundo-card);
   padding: 20px;

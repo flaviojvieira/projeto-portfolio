@@ -36,7 +36,12 @@ body {
   padding: 10px;
   display: flex;
   justify-content: flex-end;
-  align-content: center;  
+  align-content: center;    
+}
+  
+header {
+  position: sticky;
+  top: 0;
 }
 
 #menu ul {
@@ -69,7 +74,7 @@ div#imagem {
   border-radius: 0 0 5px 5px; 
 }
 
-header img {  
+.img {  
   width: 180px;  
   aspect-ratio: 1/1;
   object-fit: cover;

@@ -44,6 +44,11 @@ header {
   top: 0;
 }
 
+
+.img {
+  z-index: 1;
+}
+
 #menu ul {
   list-style: none;
   display: flex;
@@ -64,7 +69,7 @@ nav#menu a:hover {
   color: var(--destaque);
 }
 
-div#imagem {  
+div.imagem {  
   background-image: url(../imagens/codigo.jpg);
   background-attachment: fixed; 
   background-size: cover; 
@@ -292,6 +297,22 @@ footer a:hover {
 
 /* Telas Grandes */
 @media screen and (min-width: 768px) {
+  section#fotos {
+      
+  } 
+
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+  }
+
+  section#detalhes {
+    grid-column: 3 / 5;
+  }
+
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -310,5 +331,4 @@ footer a:hover {
     max-width: 20%;
     max-height: 200px;
   }
-
 }

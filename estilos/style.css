@@ -23,11 +23,21 @@
   --fundo-card: #ffffff;
 }
 
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #ff5522;
+  --destaque-inverso: #a73917;
+  --fundo-card: #444444;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
-  background-color: black;
+  background-color: var(--fundo-principal);
   color: var(--texto);  
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #inicio {
@@ -64,7 +74,8 @@ nav#menu a:hover {
   color: var(--destaque);
 }
 
-div.imagem {  
+
+div.imagem {   
   background-image: url(../imagens/codigo.jpg);
   background-attachment: fixed; 
   background-size: cover; 
@@ -143,8 +154,7 @@ section#detalhes {
 h2#apresentacao {
   text-align: center;
   font-size: 1.7em;
-  padding: 10px;
-  background-color: var(--fundo-principal);
+  padding: 10px;  
   border-radius: 8px;
 }
 
@@ -295,7 +305,7 @@ footer a:hover {
 @media screen and (min-width: 768px) {
 
   #fotos {
-    background-color: white;
+    background-color: var(--fundo-card);
     display: flex;
     flex-direction: column;
     align-items: start;
